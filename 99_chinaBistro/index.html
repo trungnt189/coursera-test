@@ -1,10 +1,3 @@
-<!-- 
-  browser-sync start --server --directory --files "**/*"
-  lg >= 992
-  md >= 768
-
- -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,7 +27,7 @@
     <header>
       <nav id="header-nav" class="navbar navbar-expand-md navbar-expand-lg">
         <div class="container-md">
-          <div class="navbar-header">
+          <div class="navbar-header float-md-start">
             <a href="index.html" class="float-start d-none d-lg-block">
               <div id="logo-img"></div>
             </a>
@@ -56,6 +49,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
+              <!-- <i class="fa-regular fa-bars"></i> -->
               <span
                 class="navbar-toggler-icon"
                 style="background: url('images/nav icon.svg')"
@@ -63,7 +57,7 @@
             </button>
           </div>
 
-          <div id="collapsable-nav" class="collapse navbar-collapse">
+          <div id="collapsable-nav" class="float-md-end collapse navbar-collapse">
             <ul id="nav-list" class="navbar-nav navbar-right">
               <li class="nav-item">
                 <a class="nav-link" href="menu-categories.html">
@@ -97,6 +91,9 @@
         </div>
       </nav>
     </header>
+    <div id="main-content" class="container-md">
+      <div class="jumbotron"><img src="images/jumbotron_768.jpg" alt="Picture of Restaurant" class="img-fluid d-block d-md-none"></div>
+    </div>
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="js/jquery-3.6.1.min.js"></script>
